@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/include_titlebar"
+        android:paddingTop="0dp" />
+    
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="111111111111111111111111111"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="4" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:visibility="visible" >
+            
+            <RadioButton
+                android:id="@+id/radioA"
+                style="@style/radionbutton_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:tag="A"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radioB"
+                style="@style/radionbutton_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:tag="B"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radioC"
+                style="@style/radionbutton_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:tag="C"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radioD"
+                style="@style/radionbutton_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:tag="D"
+                android:textSize="13sp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/checkGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/cA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:paddingTop="0dp" >
+
+        <ImageButton
+            android:id="@+id/button_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0"
+            android:background="@drawable/previous" />
+
+        <ImageButton
+            android:id="@+id/button_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="246dp"
+            android:layout_weight="0"
+            android:background="@drawable/next" />
+
+    </LinearLayout>
+
+</LinearLayout>
